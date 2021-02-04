@@ -8,7 +8,7 @@ const GlobalStyle = createGlobalStyle`
 }
 
 body{
-    background: #1b1b1b;
+    background: #ffffff;
     font-family: 'Inter', sans-serif;
 }
 
@@ -17,38 +17,39 @@ button {
     font-size: 1.1.rem;
     cursor: pointer;
     padding: 1rem 2rem;
-    border: 3px solid #0B7D5C;
+    border: 3px solid #D8E2DC;
     background: transparent;
-    color: white;
+    color: #000;
     transition: all 0.5s ease;
     font-family: 'Inter', sans-serif;
     &:hover{
-        background-color: #0B7D5C;
-        color: white;
+        background-color: #D8E2DC;
+        color:#000;
     }
     
 }
 h2{
         font-weight: lighter;
-        font-size: 4rem;
+        font-size: 3rem;
+        color: #000;
     }
     h3{
-        color:white;
+        color:#000;
     }
     h4{
         font-weight: bold;
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
     span{
         font-weight: bold;
-        color:#E3D457;
+        color:#FF8750;
     }
     a{
         font-size: 1.1rem;
     }
     p{
         padding: 3rem 0rem;
-        color: #ccc;
+        color:#000;
         font-size: 1.4rem;
         line-height: 150%;
     }

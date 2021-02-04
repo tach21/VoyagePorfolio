@@ -1,35 +1,39 @@
 import React from "react";
 import BioPic from "../img/BioPic.jpg";
 import { About, Description, Image, Hide } from "../style";
+import { motion } from "framer-motion";
+import { titleAnimation, fade, imageAnimation } from "../animation";
+import Wave from "./Wave";
 
 const Bio = () => {
   return (
     <About>
       <Description>
-        <div className="tile">
+        <motion.div>
           <Hide>
-            <h2>Des pièces </h2>
+            <motion.h2 variants={titleAnimation}>Des pièces </motion.h2>
           </Hide>
           <Hide>
-            <h2>
+            <motion.h2 variants={titleAnimation}>
               uniques aux <span> inspirations</span>
-            </h2>
+            </motion.h2>
           </Hide>
           <Hide>
-            <h2>
+            <motion.h2 variants={titleAnimation}>
               et <span>idées</span> de voyages.
-            </h2>
+            </motion.h2>
           </Hide>
-          <p>
+          <motion.p variants={fade}>
             Spécialiste dans le recyclage de création de vêtements,
-            d'accessoires, et bijoux en petite quantité.
-          </p>
-          <button>Contact</button>
-        </div>
+            d'accessoires et bijoux Éditions limité.
+          </motion.p>
+          <motion.button variants={fade}>Contact</motion.button>
+        </motion.div>
       </Description>
       <Image>
-        <img src={BioPic} alt="Bio picture" />
+        <motion.img variants={imageAnimation} src={BioPic} alt="Bio picture" />
       </Image>
+      <Wave />
     </About>
   );
 };

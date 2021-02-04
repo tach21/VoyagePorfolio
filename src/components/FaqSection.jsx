@@ -6,7 +6,7 @@ const FaqSection = () => {
   return (
     <Faq>
       <h2>
-        Any Questions <span>FAQ</span>
+        Questions <span>FAQ</span>
       </h2>
       <div className="question">
         <h4>How to order</h4>
@@ -70,7 +70,7 @@ const Faq = styled(About)`
     font-weight: lighter;
   }
   .faq-line {
-    background: #cccccc;
+    background: #000;
     height: 0.2rem;
     margin: 2rem 0rem;
     width: 100%;
@@ -78,13 +78,12 @@ const Faq = styled(About)`
   .question {
     padding: 3rem 0rem;
     cursor: pointer;
+    color: #000;
   }
   .answer {
     padding: 2rem 0rem;
-    p{
+    p {
       padding: 1rem 0rem;
-    }
-      
     }
   }
 `;

@@ -56,6 +56,7 @@ const Services = styled(About)`
   p {
     width: 70%;
     padding: 2rem 0rem 4rem 0rem;
+    color: #000;
   }
 `;
 const Cards = styled.div`
