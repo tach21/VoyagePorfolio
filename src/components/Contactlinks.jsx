@@ -8,40 +8,43 @@ import maillogo from "../img/mail.svg";
 
 const Contactlinks = () => {
   return (
-    <div>
+    <ContactStyle>
       <Title>
         <Hide>
           <motion.h2 variants={titleAnimation}>Get in touch.</motion.h2>
         </Hide>
       </Title>
-
-      <div className="icon">
-        <Hide>
-          <Social variants={titleAnimation}>
-            <img src={maillogo} alt="mail logo" />
-            <a href="couturiere-voyage@outlook.fr">
-              couturiere-voyage@outlook.fr
-            </a>
-          </Social>
-        </Hide>
-      </div>
-      <div className="icon">
-        <Hide>
-          <Social variants={titleAnimation}>
-            <img src={instalogo} alt="instagram logo" />
-            <a href="https://www.instagram.com/voyage.couturiere/">instagram</a>
-          </Social>
-        </Hide>
-      </div>
-      <div className="icon">
-        <Hide>
-          <Social variants={titleAnimation}>
-            <img src={fblogo} alt="facebook logo" />
-            <a href="https://www.facebook.com/voyage.couturiere">facebook</a>
-          </Social>
-        </Hide>
-      </div>
-    </div>
+      <>
+        <div className="icon">
+          <Hide>
+            <Social variants={titleAnimation}>
+              <img src={maillogo} alt="mail logo" />
+              <a href="couturiere-voyage@outlook.fr">
+                couturiere-voyage@outlook.fr
+              </a>
+            </Social>
+          </Hide>
+        </div>
+        <div className="icon">
+          <Hide>
+            <Social variants={titleAnimation}>
+              <img src={instalogo} alt="instagram logo" />
+              <a href="https://www.instagram.com/voyage.couturiere/">
+                instagram
+              </a>
+            </Social>
+          </Hide>
+        </div>
+        <div className="icon">
+          <Hide>
+            <Social variants={titleAnimation}>
+              <img src={fblogo} alt="facebook logo" />
+              <a href="https://www.facebook.com/voyage.couturiere">facebook</a>
+            </Social>
+          </Hide>
+        </div>
+      </>
+    </ContactStyle>
   );
 };
 
