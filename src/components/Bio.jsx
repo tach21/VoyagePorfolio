@@ -4,6 +4,7 @@ import { About, Description, Image, Hide } from "../style";
 import { motion } from "framer-motion";
 import { titleAnimation, fade, imageAnimation } from "../animation";
 import Wave from "./Wave";
+import { Link } from "react-router-dom";
 
 const Bio = () => {
   return (
@@ -27,7 +28,9 @@ const Bio = () => {
             Spécialiste dans le recyclage de création de vêtements,
             d'accessoires et bijoux Éditions limité.
           </motion.p>
-          <motion.button variants={fade}>Contact</motion.button>
+          <Link to="/contact">
+            <motion.button variants={fade}>Contact</motion.button>
+          </Link>
         </motion.div>
       </Description>
       <Image>

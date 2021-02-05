@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import { About } from "../style";
+import Toggle from "./Toggle";
+import { AnimateSharedLayout } from "framer-motion";
 
 const FaqSection = () => {
   return (
@@ -8,54 +10,48 @@ const FaqSection = () => {
       <h2>
         Questions <span>FAQ</span>
       </h2>
-      <div className="question">
-        <h4>How to order</h4>
-        <div className="answer">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-          <p>
-            Vero natus dolores illo quod! Aperiam, et! Similique odio accusamus
-            fugiat quidem perferendis nulla, natus vero ad explicabo? Placeat
-            quasi saepe harum?
-          </p>
-        </div>
-        <div className="faq-line"></div>
-      </div>
-      <div className="question">
-        <h4>Shipping</h4>
-        <div className="answer">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-          <p>
-            Vero natus dolores illo quod! Aperiam, et! Similique odio accusamus
-            fugiat quidem perferendis nulla, natus vero ad explicabo? Placeat
-            quasi saepe harum?
-          </p>
-        </div>
-        <div className="faq-line"></div>
-      </div>
-      <div className="question">
-        <h4>Creations in demand</h4>
-        <div className="answer">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-          <p>
-            Vero natus dolores illo quod! Aperiam, et! Similique odio accusamus
-            fugiat quidem perferendis nulla, natus vero ad explicabo? Placeat
-            quasi saepe harum?
-          </p>
-        </div>
-        <div className="faq-line"></div>
-      </div>
-      <div className="question">
-        <h4>Ordering a unique design</h4>
-        <div className="answer">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-          <p>
-            Vero natus dolores illo quod! Aperiam, et! Similique odio accusamus
-            fugiat quidem perferendis nulla, natus vero ad explicabo? Placeat
-            quasi saepe harum?
-          </p>
-        </div>
-        <div className="faq-line"></div>
-      </div>
+      <AnimateSharedLayout>
+        <Toggle title="How to order?">
+          <div className="answer">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            <p>
+              Vero natus dolores illo quod! Aperiam, et! Similique odio
+              accusamus fugiat quidem perferendis nulla, natus vero ad
+              explicabo? Placeat quasi saepe harum?
+            </p>
+          </div>
+        </Toggle>
+        <Toggle title="Shipping details">
+          <div className="answer">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            <p>
+              Vero natus dolores illo quod! Aperiam, et! Similique odio
+              accusamus fugiat quidem perferendis nulla, natus vero ad
+              explicabo? Placeat quasi saepe harum?
+            </p>
+          </div>
+        </Toggle>
+        <Toggle title="Creations in demand">
+          <div className="answer">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            <p>
+              Vero natus dolores illo quod! Aperiam, et! Similique odio
+              accusamus fugiat quidem perferendis nulla, natus vero ad
+              explicabo? Placeat quasi saepe harum?
+            </p>
+          </div>
+        </Toggle>
+        <Toggle title="Ordering a unique design">
+          <div className="answer">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            <p>
+              Vero natus dolores illo quod! Aperiam, et! Similique odio
+              accusamus fugiat quidem perferendis nulla, natus vero ad
+              explicabo? Placeat quasi saepe harum?
+            </p>
+          </div>
+        </Toggle>
+      </AnimateSharedLayout>
     </Faq>
   );
 };

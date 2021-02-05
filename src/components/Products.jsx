@@ -35,6 +35,7 @@ function ProductList() {
       <h1>
         Products <span>en</span> Stock
       </h1>
+
       <Products>
         {products &&
           products.map((product) => {
@@ -109,4 +110,5 @@ const Items = styled.div`
 const Logo = styled.div`
   float: right;
 `;
+
 export default ProductList;
