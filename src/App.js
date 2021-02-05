@@ -17,7 +17,7 @@ function App() {
         <Route path="/" exact>
           <BioPage />
         </Route>
-        <Route path="/mywork" >
+        <Route path="/products" >
           <MyWork />
         </Route>
         <Route path="/contact" >

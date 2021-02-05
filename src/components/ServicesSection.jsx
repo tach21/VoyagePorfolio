@@ -1,6 +1,5 @@
 import React from "react";
-import creation from "../img/creation.jpg";
-import { About, Description, Hide } from "../style";
+import { About, Description } from "../style";
 import styled from "styled-components";
 import handmade from "../img/handmade.svg";
 import quality from "../img/quality.svg";

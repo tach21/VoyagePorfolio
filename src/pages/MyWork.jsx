@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { pageAnimation } from "../animation";
+import Products from "../components/Products";
 
 const MyWork = () => {
   return (
@@ -10,7 +11,7 @@ const MyWork = () => {
       animate="show"
       exit="exit"
     >
-      <h1>Work</h1>
+      <Products />
     </motion.div>
   );
 };

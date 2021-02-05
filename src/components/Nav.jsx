@@ -11,10 +11,10 @@ const Nav = () => {
       </Logo>
       <ul>
         <li>
-          <Link to="/">Présentation</Link>
+          <Link to="/">Acceuil</Link>
         </li>
         <li>
-          <Link to="/mywork">Mon travail</Link>
+          <Link to="/products">Produits</Link>
         </li>
         <li>
           <Link to="/contact">Contact</Link>
